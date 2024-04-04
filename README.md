@@ -26,16 +26,18 @@ SearchBar
   - storing cache value. ✔
   - Optimising ✔
 
+
+Additional Functionalities
+  - Youtube search Suggestions  ✔
+  - Debouncing ✔
+  - Caching ✔
+  - Live Chat (Optimization) ✔
+
+
 Extras
   - Shimmer UI 
   - Header Intact 
   - Scroller on filter 
-
-Additional Functionalities
-  - Youtube search Suggestions  
-  - Debouncing 
-  - Caching 
-  - Live Chat (Optimization) 
-
+  - More Interactive CSS
 
 
