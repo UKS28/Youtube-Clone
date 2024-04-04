@@ -20,7 +20,7 @@ const LiveChatComponent = () => {
           
           return ()=> clearInterval(timer)
           
-        }, 10000);
+        }, 1500);
 
 
     },[]);

@@ -35,9 +35,20 @@ Additional Functionalities
 
 
 Extras
-  - Shimmer UI 
+  - Shimmer UI ✔
   - Header Intact 
   - Scroller on filter 
   - More Interactive CSS
 
 
+home page:
+![Home Page](image.png)
+
+Search Suggestion:
+![alt text](image-1.png)
+
+Live Comments:
+![alt text](image-2.png)
+
+Past Comments:
+![alt text](image-3.png)
