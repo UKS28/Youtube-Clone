@@ -26,9 +26,9 @@ export const YOUTUBE_VIDEOS_API =
   
   // https://clients1.google.com/complete/search?client=youtube&gs_ri=youtube&ds=yt&q=faded
 
-  
+  // https://justcors.com/tl_3b526a1/
 export const YOUTUBE_SEARCH_API =
-  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "https://justcors.com/tl_3b526a1/http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
   export const Comments = [
     {
