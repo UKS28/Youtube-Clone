@@ -9,7 +9,7 @@ export const listItems=[
     "Soccer",
     "Gaming",
     "Hollywood",
-    "Mutual find",
+    "Finance",
     "Python",
     "Computer",
     
@@ -28,7 +28,7 @@ export const YOUTUBE_VIDEOS_API =
 
   // https://justcors.com/tl_3b526a1/
 export const YOUTUBE_SEARCH_API =
-  "https://justcors.com/tl_3b526a1/http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
+  "http://suggestqueries.google.com/complete/search?client=firefox&ds=yt&q=";
 
   export const Comments = [
     {

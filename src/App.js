@@ -7,11 +7,13 @@ import appStore from './Utils/appStore';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import MainComponent from './Components/MainComponent';
 import WatchPage from './Components/WatchPage';
+import ErrorPage from './Components/ErrorPage';
 
 function App() {
   const appRouter=createBrowserRouter([
     {
       path:"/",
+      errorElement:<ErrorPage/>,
       element:<Body/>,
       children:[
         {
@@ -31,7 +33,7 @@ function App() {
 
   return (
     <Provider store={appStore}>
-      <div >
+       <div >
         <Header/>
         <RouterProvider router={appRouter}/>
       </div>
@@ -41,3 +43,4 @@ function App() {
 }
 
 export default App;
+;

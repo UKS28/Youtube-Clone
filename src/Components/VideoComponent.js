@@ -3,15 +3,28 @@ import { YOUTUBE_VIDEOS_API } from '../Utils/contants';
 import VideoCard from './VideoCard';
 import { Link } from 'react-router-dom';
 import Shimmer from './Shimmer';
+import { useDispatch, useSelector } from 'react-redux'
+import { setError } from '../Utils/appSlice';
 
 const VideoComponent = () => {
   const [videos,setVideos]=useState([]);
+  const dispatch=useDispatch();
   // console.log(videos.items);
   const getVideos = async ()=>{
-    const data=await fetch(YOUTUBE_VIDEOS_API);
-    const json=await data.json();
-    // console.log(json);
-    setVideos(json);
+       try{
+         const data=await fetch(YOUTUBE_VIDEOS_API);
+         if(data.status!==200) throw new Error('Failed to fetch data,status 400');
+
+        //  console.log(data.status);
+         const json=await data.json();
+         // console.log(json);
+         setVideos(json);
+         dispatch(setError(""));
+       }catch(err)
+       {
+        //  console.log(err);
+          dispatch(setError(err));
+       }
   } 
 
   useEffect(()=>{
@@ -19,7 +32,7 @@ const VideoComponent = () => {
   },[]);
 
   if(videos.length===0)  return <Shimmer/>;
-     
+  
   return (
     <div className='flex flex-wrap'>
 

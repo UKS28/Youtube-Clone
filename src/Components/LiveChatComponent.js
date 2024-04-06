@@ -10,7 +10,7 @@ const LiveChatComponent = () => {
     // const chatMessages=useSelector((store)=>store.chat.message);
     const chatMessages = useSelector((store) => store.chat.messages);
 
-    console.log(chatMessages);
+    // console.log(chatMessages);
     useEffect(()=>{
         const timer=setInterval(() => {
           dispatch(addMessage({

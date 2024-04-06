@@ -56,11 +56,11 @@ const CommentsList = ({ comments }) => {
                   allowFullScreen>
                   </iframe>
 
-                  <div className='text-gray-900 m-6 font-bold '>{videoData.title}</div>
+                  <div className='text-gray-900 m-4 font-bold text-2xl'>{videoData.title}</div>
 
                   <div className='flex justify-between w-[57rem]'>
                       <div >
-                        <span className='mx-4 font-bold'>{videoData.channelTitle}</span>
+                        <span className='mx-4 font-bold text-xl'>{videoData.channelTitle}</span>
                         <button className='p-2 rounded-3xl bg-black text-white'>Subscribe</button>
                       </div>
 
@@ -90,7 +90,7 @@ const CommentsList = ({ comments }) => {
          {/* comment sevtion  */}
         <div className='mx-4'>
                   <div >
-                    <span className='font-bold'>Comments </span>
+                    <span className="font-bold text-gray-900 text-2xl">Comments </span>
                     <CommentsList comments={Comments} /> 
                   </div>
         </div>  

@@ -38,7 +38,9 @@ Extras
   - Shimmer UI ✔
   - Header Intact 
   - Scroller on filter 
-  - More Interactive CSS
+  - More Interactive CSS 
+  - Error handling page 
+  
 
 
 home page:
